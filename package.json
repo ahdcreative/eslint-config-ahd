@@ -8,8 +8,7 @@
     "registry": "https://npm.pkg.github.com"
   },
   "scripts": {
-    "lint": "run-s -c lint:*",
-    "lint:eslint": "eslint .",
+    "lint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint:prettier:fix": "prettier --write ."
   },
