@@ -1,11 +1,12 @@
 {
-  "name": "@ahd-creative/eslint-config-ahd",
+  "name": "@ahdcreative/eslint-config-ahd",
   "version": "1.0.0",
   "description": "EsLint Config for @ahd-creative",
+  "repository": "https://github.com/AHDCreative/eslint-config-ahd",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "htps://npm.pkg.github.com"
   },
   "scripts": {
     "lint": "eslint .",
@@ -14,8 +15,7 @@
   },
   "engines": {
     "node": ">=10.0.0",
-    "npm": ">=6.11.0",
-    "yarn": ">=3.23.0"
+    "npm": ">=6.11.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=2.31.0",
@@ -61,16 +61,15 @@
     }
   },
   "devDependencies": {
+    "@ahdcreative/prettier-config-ahd": "1.0.1",
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
-    "prettier-config-standard": "^5.0.0",
     "typescript": "^4.8.2"
   },
   "files": [
     "*.js"
-  ],
-  "packageManager": "yarn@3.2.3"
+  ]
 }
