@@ -14,7 +14,7 @@
   "engines": {
     "node": ">=10.0.0",
     "npm": ">=6.11.0",
-    "yarn": ">=3.23.0"
+    "yarn": "4.0.0-rc.18"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=2.31.0",
