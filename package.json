@@ -45,23 +45,22 @@
       "optional": false
     },
     "eslint-plugin-prettier": {
-      "optional": true
+      "optional": false
     },
     "eslint-plugin-react": {
-      "optional": true
+      "optional": false
     },
     "eslint-plugin-react-hooks": {
-      "optional": true
+      "optional": false
     },
     "prettier": {
-      "optional": true
+      "optional": false
     },
     "typescript": {
-      "optional": true
+      "optional": false
     }
   },
   "devDependencies": {
-    "prettier-config-ahd": "1.0.1",
     "eslint": "8.23.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
@@ -70,5 +69,8 @@
   },
   "files": [
     "*.js"
-  ]
+  ],
+  "dependencies": {
+    "prettier-config-ahd": "1.0.1"
+  }
 }

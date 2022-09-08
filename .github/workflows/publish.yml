@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm run lit
+      - run: npm run lint
+      - run: npm run lint:prettier:fix
+      - run: npm run lint:prettier
 
   publish-npm:
     needs: build
