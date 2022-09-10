@@ -6,9 +6,9 @@ module.exports = {
   extends: [
     // basic
     './index.js',
-    './+prettier.js'
+    './+prettier.js',
   ],
   env: {
-    node: true
-  }
-}
+    node: true,
+  },
+};

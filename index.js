@@ -7,16 +7,16 @@ module.exports = {
     // eslint
     'eslint:recommended',
     // import
-    'plugin:import/recommended'
+    'plugin:import/recommended',
   ],
   parserOptions: {
     // al giorno d'oggi nessuno scrive codice js con type="script"
     // quindi lint lo scrive in automatico
     sourceType: 'module',
-    ecmaVersion: 2020
+    ecmaVersion: 2020,
   },
   env: {
-    es2020: true
+    es2020: true,
   },
   rules: {
     'no-var': 2,
@@ -26,13 +26,13 @@ module.exports = {
       {
         ignoreRestSiblings: true,
         argsIgnorePattern: '^_',
-        caughtErrors: 'all'
-      }
+        caughtErrors: 'all',
+      },
     ],
     'prefer-const': 2,
-    semi: [2, 'always'],
-    strict: [2, 'global'],
+    'semi': [2, 'always'],
+    'strict': [2, 'global'],
     'import/no-default-export': 2,
-    'import/order': [2, { alphabetize: { order: 'asc' } }]
-  }
-}
+    'import/order': [2, { alphabetize: { order: 'asc' } }],
+  },
+};

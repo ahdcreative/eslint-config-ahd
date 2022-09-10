@@ -9,7 +9,7 @@ const configOverrideForTS = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     // import
-    'plugin:import/typescript'
+    'plugin:import/typescript',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -17,11 +17,11 @@ const configOverrideForTS = {
     // 上書きするべきするべき設定だが、いちいち上書きするのも面倒なので、ひとまず
     // プロジェクトルートにある tsconfig.json を `parserOptions.project` にセットしてある。
     // プロジェクトに応じて適時上書きしてもらうことを想定している。
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   rules: {
     // eslint
-    strict: 0,
+    'strict': 0,
 
     // import
     // eslint ではモジュールの解決に失敗することがあるので, TypeScriptに任せる
@@ -47,46 +47,46 @@ const configOverrideForTS = {
         // 末尾のアンダースコアは基本的に使われないのでデフォルトで禁止しておく。
         // 必要に応じて allow に上書きすることを想定している。
         leadingUnderscore: 'allow',
-        trailingUnderscore: 'forbid'
+        trailingUnderscore: 'forbid',
       },
       {
         selector: 'function',
         // React Component の宣言のために PascalCase も許可する
         format: ['camelCase', 'PascalCase'],
         leadingUnderscore: 'allow',
-        trailingUnderscore: 'forbid'
+        trailingUnderscore: 'forbid',
       },
       {
         selector: 'parameter',
         format: ['camelCase'],
         leadingUnderscore: 'allow',
-        trailingUnderscore: 'forbid'
+        trailingUnderscore: 'forbid',
       },
       {
         selector: 'memberLike',
         format: ['camelCase'],
         leadingUnderscore: 'allow',
-        trailingUnderscore: 'forbid'
+        trailingUnderscore: 'forbid',
       },
       {
         selector: 'typeLike',
         format: ['PascalCase'],
         leadingUnderscore: 'allow',
-        trailingUnderscore: 'forbid'
+        trailingUnderscore: 'forbid',
       },
       {
         selector: 'property',
         // オブジェクトのプロパティには様々な命名規則の識別子が書かれるので、緩めにしておく
         format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
         leadingUnderscore: 'allow',
-        trailingUnderscore: 'forbid'
+        trailingUnderscore: 'forbid',
       },
       {
         selector: 'method',
         format: ['camelCase'],
         leadingUnderscore: 'allow',
-        trailingUnderscore: 'forbid'
-      }
+        trailingUnderscore: 'forbid',
+      },
     ],
     // 厳密な型検査ができなくなってしまうため、any の利用を警告する。
     // ただし意図的に利用したいことも多々あるので warning とする。
@@ -126,19 +126,19 @@ const configOverrideForTS = {
       {
         ignoreRestSiblings: true,
         argsIgnorePattern: '^_',
-        caughtErrors: 'all'
-      }
+        caughtErrors: 'all',
+      },
     ],
     // @typescript-eslint/no-explicit-any さえあれば十分なので off にしておく。
     '@typescript-eslint/no-unsafe-assignment': 0,
     // @typescript-eslint/no-explicit-any さえあれば十分なので off にしておく。
     '@typescript-eslint/no-unsafe-call': 0,
     // @typescript-eslint/no-explicit-any さえあれば十分なので off にしておく。
-    '@typescript-eslint/no-unsafe-member-access': 0
-  }
-}
+    '@typescript-eslint/no-unsafe-member-access': 0,
+  },
+};
 
 /** @type import('eslint').Linter.BaseConfig */
 module.exports = {
-  overrides: [configOverrideForTS]
-}
+  overrides: [configOverrideForTS],
+};

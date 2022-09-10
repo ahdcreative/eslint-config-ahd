@@ -5,9 +5,9 @@ const configOverrideForTS = {
   files: ['*.ts', '*.tsx'],
   rules: {
     // TypeScript では propTypes は使わず TypeScript の型注釈を使えば良いので off にする
-    'react/prop-types': 0
-  }
-}
+    'react/prop-types': 0,
+  },
+};
 
 /** @type import('eslint').Linter.BaseConfig */
 module.exports = {
@@ -15,25 +15,25 @@ module.exports = {
   extends: [
     // react
     'plugin:react/recommended',
-    'plugin:react-hooks/recommended'
+    'plugin:react-hooks/recommended',
   ],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   env: {
-    browser: true
+    browser: true,
   },
   settings: {
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   rules: {
     // react
     // コーディングスタイル統一のため、`<Component />` の形式で記述できる場合はそのように記述する
-    'react/self-closing-comp': 2
+    'react/self-closing-comp': 2,
   },
-  overrides: [configOverrideForTS]
-}
+  overrides: [configOverrideForTS],
+};
