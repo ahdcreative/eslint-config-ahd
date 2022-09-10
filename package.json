@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ahd",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "Shareable ESLint config for @ahdcreative, based on airbnb/javascript.",
   "repository": {
     "type": "git",
@@ -37,7 +37,8 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react-hooks": ">=4.0.0",
     "prettier": ">=2.0.5",
-    "typescript": ">=3.9.3"
+    "typescript": ">=3.9.3",
+    "react": "^18.2.0"
   },
   "peerDependenciesMeta": {
     "@typescript-eslint/eslint-plugin": {
@@ -74,7 +75,7 @@
   "devDependencies": {
     "eslint": "8.23.0",
     "eslint-config-prettier": "8.5.0",
-    "prettier-config-ahd": "^1.0.2",
+    "prettier-config-ahd": "^1.0.3",
     "eslint-config-airbnb": "19.0.4",
     "eslint-plugin-import": "2.26.0",
     "npm-run-all": "4.1.5",
@@ -84,9 +85,6 @@
   "files": [
     "*.js"
   ],
-  "dependencies": {
-    "prettier-config-ahd": "^1.0.1"
-  },
   "prettier": {
     "singleQuote": true,
     "quoteProps": "consistent",
