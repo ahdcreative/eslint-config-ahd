@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-ahd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "EsLint Config for @ahd-creative",
-  "repository": "https://github.com/AHDCreative/eslint-config-ahd",
+  "repository": "https://github.com/ahdcreative/eslint-config-ahd",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
