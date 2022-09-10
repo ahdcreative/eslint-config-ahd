@@ -1,38 +1,22 @@
-// @ts-check
-
-/** @type import('eslint').Linter.BaseConfig */
 module.exports = {
-  plugins: ['import'],
-  extends: [
-    // eslint
-    'eslint:recommended',
-    // import
-    'plugin:import/recommended',
-  ],
-  parserOptions: {
-    // al giorno d'oggi nessuno scrive codice js con type="script"
-    // quindi lint lo scrive in automatico
-    sourceType: 'module',
-    ecmaVersion: 2020,
-  },
-  env: {
-    es2020: true,
-  },
+  extends: ['eslint:recommended', 'airbnb', 'airbnb/hooks', 'prettier'],
   rules: {
-    'no-var': 2,
-    'func-style': [2, 'declaration', { allowArrowFunctions: true }],
-    'no-unused-vars': [
-      2,
+    'id-length': [
+      'warn',
       {
-        ignoreRestSiblings: true,
-        argsIgnorePattern: '^_',
-        caughtErrors: 'all',
+        min: 2,
+        exceptions: ['x', 'y', 'e', 'i', 'j', 'k', 'd', 'n', '_', '$'],
       },
     ],
-    'prefer-const': 2,
-    'semi': [2, 'always'],
-    'strict': [2, 'global'],
-    'import/no-default-export': 2,
-    'import/order': [2, { alphabetize: { order: 'asc' } }],
+    'no-new': ['warn'],
+    'no-var': ['off'],
+    'no-warning-comments': ['off'],
+    'object-shorthand': ['error', 'methods'],
+    'prefer-template': ['off'],
+    'react/jsx-boolean-value': ['off'],
+    'react/jsx-no-bind': ['off'],
+    'react/prefer-es6-class': ['off', 'never'],
+    'react/sort-comp': ['off'],
+    'react/prop-types': ['off'],
   },
 };
