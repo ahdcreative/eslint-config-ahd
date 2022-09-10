@@ -2,9 +2,9 @@
 
 [![npm](https://img.shields.io/npm/v/eslint-config-ahd.svg)](https://www.npmjs.com/package/eslint-config-ahd)   [![CI](https://github.com/ahdcreative/eslint-config-ahd/actions/workflows/node.yml/badge.svg?branch=main)](https://github.com/ahdcreative/eslint-config-ahd/actions/workflows/node.yml)
 
-> Shareable ESLint config for Wagtail, based on airbnb/javascript.
+> Shareable ESLint config for AHDCreative, based on airbnb/javascript.
 
-The package provides Wagtail's .eslintrc as an extensible shared config.
+The package provides AHDCreative .eslintrc as an extensible shared config.
 
 ## Usage
 
