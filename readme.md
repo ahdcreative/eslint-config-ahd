@@ -1,6 +1,6 @@
-# [@ahdcreative/eslint-config-ahd](https://www.npmjs.com/package/eslint-config-ahd) [<img src="https://raw.githubusercontent.com/wagtail/eslint-config-wagtail/main/.github/eslint-logo.svg?sanitize=true" alt="ESLint" width="90" height="90" align="right">](https://eslint.org)
+# [@ahdcreative/eslint-config-ahd](https://www.npmjs.com/package/@ahdcreative/eslint-config-ahd) [<img src="https://raw.githubusercontent.com/wagtail/eslint-config-wagtail/main/.github/eslint-logo.svg?sanitize=true" alt="ESLint" width="90" height="90" align="right">](https://eslint.org)
 
-[![npm](https://img.shields.io/npm/v/eslint-config-ahd.svg)](https://www.npmjs.com/package/eslint-config-ahd) [![CI](https://github.com/ahdcreative/eslint-config-ahd/actions/workflows/node.yml/badge.svg?branch=main)](https://github.com/ahdcreative/eslint-config-ahd/actions/workflows/node.yml)
+[![npm](https://img.shields.io/npm/v/eslint-config-ahd.svg)](https://www.npmjs.com/package/@ahdcreative/eslint-config-ahd) [![CI](https://github.com/ahdcreative/eslint-config-ahd/actions/workflows/node.yml/badge.svg?branch=main)](https://github.com/ahdcreative/eslint-config-ahd/actions/workflows/node.yml)
 
 > Shareable ESLint config for AHDCreative, based on airbnb/javascript.
 
