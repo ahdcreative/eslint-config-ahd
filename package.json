@@ -1,6 +1,6 @@
 {
   "name": "@ahdcreative/eslint-config-ahd",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "prettier": "@ahdcreative/prettier-config-ahd",
   "description": "Shareable ESLint config for @ahdcreative, based on airbnb/javascript.",
   "repository": {
@@ -30,7 +30,7 @@
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=2.31.0",
     "@typescript-eslint/parser": ">=2.31.0",
-    "eslint": ">=6.8.0",
+    "eslint": "8.22.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": ">=8.0.0",
     "eslint-plugin-import": ">=2.20.2",
