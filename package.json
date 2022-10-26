@@ -28,7 +28,7 @@
     "npm": ">=6.11.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.33.0",
+    "@typescript-eslint/eslint-plugin": "5.41.0",
     "@typescript-eslint/parser": ">=2.31.0",
     "eslint": "8.22.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -74,8 +74,8 @@
     }
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.33.0",
-    "@typescript-eslint/parser": "5.37.0",
+    "@typescript-eslint/eslint-plugin": "5.41.0",
+    "@typescript-eslint/parser": "5.41.0",
     "eslint": "8.22.0",
     "eslint-config-prettier": "8.5.0",
     "@ahdcreative/prettier-config-ahd": "1.0.6",
